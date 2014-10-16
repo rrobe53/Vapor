@@ -14,6 +14,19 @@ body {
 body * {
   max-height: 1000000em;
 }
+.vertical-header {
+    display: table;
+    position:relative;
+    width: 100%
+}
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.align-center {
+    text-align: center;
+}
 h1,
 h2,
 h3,
@@ -83,11 +96,44 @@ h1 {
 #site-head,
 article,
 article.preview,
+section.author-profile,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
   max-width: 600px;
   width: 90%;
+}
+header.author-head {
+    background: #222 no-repeat center center;
+    background-size: cover;
+}
+header.author-head h1,
+header.author-head h2,
+header.author-head span {
+    color: #EFEFEF;
+    text-shadow: 1px 1px #777;
+}
+header.author-head.no-cover h1,
+header.author-head.no-cover h2,
+header.author-head.no-cover span {
+    color: #151515;
+    text-shadow: none;
+}
+
+figure.author-image {
+    position: relative;
+}
+figure.author-image div.image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    margin: 0 auto 10px auto;
+}
+header.author-head.no-cover {
+    background: none !important;
 }
 #site-head img {
   max-width: 100%;
