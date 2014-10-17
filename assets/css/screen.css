@@ -103,6 +103,9 @@ a.archive-link,
   max-width: 600px;
   width: 90%;
 }
+section.author-profile {
+    padding: 20px 0;
+}
 header.author-head {
     background: #222 no-repeat center center;
     background-size: cover;
@@ -118,6 +121,9 @@ header.author-head.no-cover h2,
 header.author-head.no-cover span {
     color: #151515;
     text-shadow: none;
+}
+header.author-head.no-cover section.author-profile {
+    padding: 0;
 }
 
 figure.author-image {
@@ -327,7 +333,7 @@ footer section {
   font-size: 14px;
   margin: 0 auto;
   max-width: 600px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   width: 90%;
 }
 footer.post-footer {
